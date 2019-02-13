@@ -1,0 +1,40 @@
+{
+  "name": "api-koa-example",
+  "version": "1.0.0",
+  "description": "A simple example Koa microservice",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app",
+    "dev": "nodemon src/app",
+    "lint": "eslint \"**/*.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richardbertozzo/api-koa-example.git"
+  },
+  "keywords": [
+    "Node",
+    "Koa"
+  ],
+  "author": "Richard Bertozzo <richardjrbertozzo@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/richardbertozzo/api-koa-example/issues"
+  },
+  "homepage": "https://github.com/richardbertozzo/api-koa-example#readme",
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-logger": "^3.2.0",
+    "koa-router": "^7.4.0",
+    "pino": "^5.11.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "nodemon": "^1.18.10"
+  }
+}
