@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/richardbertozzo/api-koa-example#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "dotenv": "^6.2.0",
     "koa": "^2.7.0",
     "koa-bodyparser": "^4.2.1",
