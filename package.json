@@ -4,7 +4,7 @@
   "description": "A simple example Koa microservice",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha tests/*.js --timeout 5000 --exit",
     "start": "node src/app",
     "dev": "nodemon src/app",
     "lint": "eslint \"**/*.js\""
@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/richardbertozzo/api-koa-example#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "dotenv": "^6.2.0",
     "koa": "^2.7.0",
     "koa-bodyparser": "^4.2.1",
@@ -32,9 +33,12 @@
     "pino": "^5.11.1"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
     "eslint": "^5.13.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.16.0",
-    "nodemon": "^1.18.10"
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.10",
+    "supertest": "^3.4.2"
   }
 }

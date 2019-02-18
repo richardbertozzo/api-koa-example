@@ -16,8 +16,6 @@ app.use(routes.routes());
 app.use(routes.allowedMethods());
 
 const port = process.env.PORT || 3000;
-app.listen(port, () => {
+module.exports = app.listen(port, () => {
     logger.info(`The server is running in: ${port}`);
 });
-
-module.exports = app;
