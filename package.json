@@ -4,7 +4,7 @@
   "description": "A simple example Koa microservice",
   "main": "app.js",
   "scripts": {
-    "test": "mocha tests/*.js --timeout 5000 --exit",
+    "test": "./node_modules/.bin/mocha tests/*.js --timeout 5000 --exit",
     "start": "node src/app",
     "dev": "nodemon src/app",
     "lint": "eslint \"**/*.js\""
