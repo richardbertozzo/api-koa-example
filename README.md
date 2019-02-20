@@ -4,16 +4,45 @@ A simple example Koa microservice
 
 ## Getting Started
 
-### Installation
+### Prerequisites
+You can run the project with [Docker](https://docs.docker.com/install/) or [Node](https://nodejs.org/en/download/package-manager/).
 
-1. Install [Node](https://nodejs.org/en/download/package-manager/)
-2. Clone this repo
-3. Install dependencies, just run in project folder: `npm i`
+1. Clone this repo
+2. Create the `.env` file, use the file `.env-example` as example.
 
-### Usage
+### Build / Run
 
-1. run `npm start` to start server
+1. **Docker**
 
-### Server Configuration (optional)
+    Build an image from project:
 
-You can use `.env` file, you just create the file and copy the `.env-example`.
+    ```shell
+    docker build -t api-koa-example .
+    ```
+
+    Run the docker image:
+
+    ```shell
+    docker run -it -p 3000:3000 api-koa-example
+    ```
+
+2. **Node**
+
+    Install dependencies:
+
+    ```
+    npm install
+    ```
+
+    Run the project:
+
+    ```
+    npm start
+    ```
+
+## Running the tests
+
+To run the tests execute: 
+```shell
+npm run test
+```
